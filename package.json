@@ -1,0 +1,55 @@
+{
+  "name": "simple_webpack_boilerplate",
+  "version": "1.0.0",
+  "description": "A ready to use simple webpack boilerplate",
+  "author": "pinglinh",
+  "license": "ISC",
+  "scripts": {
+    "client": "webpack-dev-server --mode development --open",
+    "server": "nodemon server.js",
+    "build": "webpack --mode production",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "concurrently": "^4.0.1",
+    "copy-webpack-plugin": "^6.3.1",
+    "css-loader": "^1.0.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "img-loader": "^3.0.2",
+    "nodemon": "^2.0.6",
+    "style-loader": "^0.23.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.1",
+    "@styled-icons/feather": "^10.18.0",
+    "@styled-icons/open-iconic": "^10.18.0",
+    "@styled-icons/zondicons": "^10.18.0",
+    "body-parser": "^1.19.0",
+    "classnames": "^2.2.6",
+    "express": "^4.17.1",
+    "formik": "^2.2.5",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-router-dom": "^5.2.0",
+    "react-swipeable-views": "^0.13.9",
+    "react-yup": "^1.19.2",
+    "styled-components": "^5.2.1",
+    "yup": "^0.31.0"
+  },
+  "resolutions": {
+    "styled-components": "^5"
+  }
+}
